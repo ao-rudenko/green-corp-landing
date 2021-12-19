@@ -39,9 +39,7 @@ button:hover{
 .header__logo{
 	height: 30px;
 }
-
 /* ABOUT */
-
 .about{
   display: flex;
   justify-content: space-around;
@@ -56,13 +54,11 @@ button:hover{
   font-size: 70px;
   line-height: 76px;
 }
- 
 .about p {
   font-size: 18px;
   line-height: 30px;
   opacity: 0.8;
 }
- 
 .about button {
   font-size: 18px;
   padding: 20px 25px;
@@ -75,14 +71,21 @@ button:hover{
 .about__sun-image {
   width: 100px;
   height: 100px;
-  margin-bottom: 250px;
+  position:absolute;
+  animation: rotation 10s linear infinite;
+}
+@keyframes rotation {
+  from { 
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .about__info {
   max-width: 550px;
 }
-
 /* FORM */
-
 .form{
   background-color: #1D263A;
   color: #fff;
@@ -109,6 +112,7 @@ button:hover{
 .form label{
   font-size: 18px;
   padding-bottom: 15px;
+  font-weight: 600;
 }
 .form__container{
   width: 550px;
@@ -116,7 +120,8 @@ button:hover{
 input {
   outline: none;
 }
-.form input{
+.form input,
+.form select {
   font-size: 18px;
   color:#213053;
   height: 60px;
@@ -127,14 +132,7 @@ input {
 select {
   appearance: none;
 }
-.form select{
-    font-size: 18px;
-    color:#213053;
-    height: 60px;
-    padding: 0 20px;
-    border-radius: 15px;
-    border:0;
-}
+
 .form button{
   font-size: 18px;
   font-weight: 600;
@@ -144,10 +142,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  text-align: left;
-  
+  text-align: left;  
 }
-
 /* FOOTER */
 footer{
   padding: 90px 20px;
@@ -160,7 +156,6 @@ footer{
 }
 .footer__group{
       margin: 80px;
-     
 }
 .footer__group h3{
   font-size: 16px;
@@ -170,12 +165,9 @@ footer{
 .footer__links{
   display: flex;
   flex-direction: column;
-
-
 }
 .footer__links a{
   margin-bottom: 15px;
-
 }
 .footer__copyright{
   margin: 40px;
