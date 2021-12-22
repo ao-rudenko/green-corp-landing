@@ -10,6 +10,10 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
+  position: sticky;
+  top:0;
+  background-color: #fff;
+  z-index: 1;
 }
 a {
   text-decoration: none;
@@ -165,6 +169,7 @@ footer{
 .footer__links{
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .footer__links a{
   margin-bottom: 15px;
@@ -173,4 +178,77 @@ footer{
   margin: 40px;
   text-align: center;
   opacity: 0.5;
+}
+.animate__animated.animate__fadeInLeft.animate__slow,
+.animate__animated.animate__fadeInRight.animate__slow
+  {
+  --animate-duration: 2s;
+}
+@media (max-width: 1024px) {
+  .about {
+    padding: 115px 20px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .about__image {
+    width: 280px;
+  }
+
+  .about__sun-image {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 10px;
+  }
+
+  .header__logo {
+    height: 20px;
+  }
+
+  header a {
+    margin-right: 10px;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    padding: 50px 10px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .about__image {
+    width: 280px;
+  }
+
+  .about__sun-image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .form {
+    padding: 50px 10px;
+  }
+
+  .form h1 {
+    font-size: 36px;
+  }
+
+  footer {
+    padding: 50px 10px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
 }
