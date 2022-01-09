@@ -117,7 +117,6 @@ button:hover{
   background-color: #eaeff9;
   border-radius: 50%;
   display: flex;
-  text-align:center;
   align-items: center;
   justify-content: center;
   color: #ad1714;
@@ -131,14 +130,15 @@ button:hover{
 .features__border{
   border: solid 1px #e6eaf4;
   margin: 50px 0;
+  width: 100%;
 }
 
 .features__feedback{
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row;  */
 }
 .features__feedback-left {
-  margin-right: 40px;
+  margin-right: 10px;
 }
 .features__feedback-left h2,
 .features__box h3 {
@@ -175,29 +175,26 @@ button:hover{
   box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
 
 }
-.stars element{
+.stars i{
   color: #ff7039;
 }
 .promo{
   display: flex;
-  
 }
 .promo__image{
   background-image:url("../img/promo.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat:cover;
   width: 50%;
   flex-shrink: 0;
-  height: 500px;
-  border-radius: 25px 0 0 25px;
+  /* border-radius: 25px 0 0 25px; */
 }
 .promo__right{
   background-color: #dd5f26;
   padding: 60px 160px;
-  border-radius: 0 25px 25px 0;
+  /* border-radius: 0 25px 25px 0; */
 }
-.promo__right .card{
+.promo__right .promo__text{
   background-color: #fff;
   padding: 30px 40px;
   font-size: 20px;
@@ -206,7 +203,7 @@ button:hover{
   border-radius: 25px;
 }
 
-.promo__right .card p::before {
+.promo__right .promo__text p::before {
   content:"";
   height: 10px;
   width: 10px;
@@ -214,6 +211,9 @@ button:hover{
   border-radius: 10px;
   display: inline-block;
   margin-right: 10px;
+}
+.promo__text p{
+  opacity: 0.8;
 }
 .button{
 width: 100%;
@@ -224,7 +224,8 @@ text-align: center;
   margin-top: 20px;
   font-size: 18px;
   padding: 15px 30px;
-  font-weight: 600;  
+  font-weight: 600;
+  box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
 }
 
 .promo__button i{
