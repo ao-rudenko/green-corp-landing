@@ -215,11 +215,12 @@ button:hover{
 .promo__text p{
   opacity: 0.8;
 }
-.button{
-width: 100%;
-text-align: center;
+ .promo__button {
+  
+  justify-content: center;
+
 }
-.promo__button{
+.promo__text button{
   background-color: #107b1c;
   margin-top: 20px;
   font-size: 18px;
@@ -227,7 +228,10 @@ text-align: center;
   font-weight: 600;
   box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
 }
-
+.promo__button-wrap {
+  display: flex;
+  justify-content: center;
+}
 .promo__button i{
   font-size: 15px;
   margin-left: 5px;
@@ -274,6 +278,11 @@ input {
   padding: 0 20px;
   border-radius: 15px;
   border:0;
+  
+}
+.form input:focus,
+.form select:focus{
+  outline:2px solid #f6980c;
 }
 select {
   appearance: none;
